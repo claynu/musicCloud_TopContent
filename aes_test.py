@@ -36,6 +36,7 @@ def AES_encrypt(text, key, iv):
     encryptor = AES.new(key, AES.MODE_CBC, iv)
     encrypt_text = encryptor.encrypt(text)
     encrypt_text = base64.b64encode(encrypt_text)
+    print encrypt_text
     return encrypt_text
 
 
